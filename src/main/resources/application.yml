@@ -21,7 +21,7 @@ spring:
             client-id: 990153823815348234
             client-secret: 4qOLnenQoKUHEVq6gym4WqQaPTeq90gW
             issuer-uri: https://discord.com/api/oauth2/authorize
-            client-authentication-method: basic
+            client-authentication-method: post
             authorization-grant-type: authorization_code
             redirect-uri: https://brooms.herokuapp.com/login/oauth2/code/discord
             scope:
