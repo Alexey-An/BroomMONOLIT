@@ -1,4 +1,4 @@
-package com.example.demo.repository;
+package com.example.demo.model.repository;
 
 import com.example.demo.entity.Vacation;
 import org.springframework.data.jpa.repository.JpaRepository;

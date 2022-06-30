@@ -1,26 +1,33 @@
 package com.example.demo.entity;
 
 import lombok.Data;
-import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 
 @Entity
 @Data
-@Table(name = "comment")
+@Table(name = "comment_broom")
 public class Comment {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "sqn", nullable = false)
     private Long id;
 
-    @Column(name = "text_comment")
-    private String textComment;
+    @Column(name = "head_text")
+    private String headText;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "sqn_user")
-    private User sqnUser;
+    @Column(name = "body_text")
+    private String bodyText;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "sqn_idea")
-    private Idea sqnIdea;
+    @Column(name = "date")
+    private LocalDate date;
+
+    @ManyToOne(fetch = FetchType.EAGER )
+    @JoinColumn(name = "user_sqn", nullable = false)
+    private User user;
+
+    @ManyToOne(fetch = FetchType.EAGER )
+    @JoinColumn(name = "idea_sqn", nullable = false)
+    private Idea idea;
 }

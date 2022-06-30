@@ -6,18 +6,17 @@ import javax.persistence.*;
 
 @Entity
 @Data
-@Table(name = "stars")
+@Table(name = "star_broom")
 public class Star {
     @Id
     @Column(name = "sqn", nullable = false)
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "sqn_user")
-    private User sqnUser;
+    @ManyToOne(fetch = FetchType.EAGER )
+    @JoinColumn(name = "user_sqn", nullable = false)
+    private User user;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "sqn_idea")
-    private Idea sqnIdea;
-
+    @ManyToOne(fetch = FetchType.EAGER )
+    @JoinColumn(name = "idea_sqn", nullable = false)
+    private Idea idea;
 }
