@@ -13,3 +13,23 @@ spring:
     username: sa
     password: password
     driverClassName: org.h2.Driver
+  security:
+    oauth2:
+      client:
+        registration:
+          discord:
+            client-id: 990153823815348234
+            client-secret: 4qOLnenQoKUHEVq6gym4WqQaPTeq90gW
+            issuer-uri: https://discord.com/api/oauth2/authorize
+            client-authentication-method: post
+            authorization-grant-type: authorization_code
+            redirect-uri: http://localhost:8081/login/oauth2/code/discord
+            scope:
+              - identify
+            client-name: broomRoom
+        provider:
+          discord:
+            authorizationUri: https://discordapp.com/api/oauth2/authorize
+            token-uri: https://discordapp.com/api/oauth2/token
+            user-info-uri: https://discordapp.com/api/users/@me
+            user-name-attribute: username

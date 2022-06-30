@@ -1,6 +1,5 @@
 package com.example.demo.projection;
 
-import com.example.demo.entity.Comment;
 import com.example.demo.entity.Idea;
 import com.example.demo.entity.User;
 import org.springframework.beans.factory.annotation.Value;
