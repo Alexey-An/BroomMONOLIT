@@ -2,9 +2,9 @@ package com.example.demo.service.star;
 
 import com.example.demo.entity.Star;
 import com.example.demo.model.StarModel;
-import com.example.demo.model.repository.IdeaRepository;
-import com.example.demo.model.repository.StarRepository;
-import com.example.demo.model.repository.UserRepository;
+import com.example.demo.repository.IdeaRepository;
+import com.example.demo.repository.StarRepository;
+import com.example.demo.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

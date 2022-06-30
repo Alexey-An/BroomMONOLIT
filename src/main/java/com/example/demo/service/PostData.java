@@ -4,10 +4,10 @@ import com.example.demo.entity.Comment;
 import com.example.demo.entity.Idea;
 import com.example.demo.entity.User;
 import com.example.demo.entity.Vacation;
-import com.example.demo.model.repository.CommentRepository;
-import com.example.demo.model.repository.IdeaRepository;
-import com.example.demo.model.repository.UserRepository;
-import com.example.demo.model.repository.VacationRepository;
+import com.example.demo.repository.CommentRepository;
+import com.example.demo.repository.IdeaRepository;
+import com.example.demo.repository.UserRepository;
+import com.example.demo.repository.VacationRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

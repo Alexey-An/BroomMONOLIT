@@ -2,9 +2,9 @@ package com.example.demo.service.comment;
 
 import com.example.demo.entity.Comment;
 import com.example.demo.model.CommentModel;
-import com.example.demo.model.repository.CommentRepository;
-import com.example.demo.model.repository.IdeaRepository;
-import com.example.demo.model.repository.UserRepository;
+import com.example.demo.repository.CommentRepository;
+import com.example.demo.repository.IdeaRepository;
+import com.example.demo.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

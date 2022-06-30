@@ -2,8 +2,8 @@ package com.example.demo.service.vacation;
 
 import com.example.demo.entity.Vacation;
 import com.example.demo.model.VacationModel;
-import com.example.demo.model.repository.UserRepository;
-import com.example.demo.model.repository.VacationRepository;
+import com.example.demo.repository.UserRepository;
+import com.example.demo.repository.VacationRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
