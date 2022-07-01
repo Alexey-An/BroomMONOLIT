@@ -23,7 +23,7 @@ spring:
             issuer-uri: https://discord.com/api/oauth2/authorize
             client-authentication-method: post
             authorization-grant-type: authorization_code
-            redirect-uri: https://brooms.herokuapp.com/login/oauth2/code/discord
+            redirect-uri: ${redirect_uri}
             scope:
               - identify
             client-name: broomRoom

@@ -16,6 +16,30 @@
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
+	<packaging>war</packaging>
+	<profiles>
+		<profile>
+			<id>heroku</id>
+			<properties>
+				<redirect_uri>https://brooms.herokuapp.com/login/oauth2/code/discord</redirect_uri>
+		</properties>
+		</profile>
+		<profile>
+			<id>local</id>
+			<properties>
+				<redirect_uri>http://localhost:8081/login/oauth2/code/discord</redirect_uri>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+		<profile>
+			<id>dev_server</id>
+			<properties>
+				<redirect_uri>http://176.119.147.104:8081/login/oauth2/code/discord</redirect_uri>
+			</properties>
+		</profile>
+	</profiles>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
